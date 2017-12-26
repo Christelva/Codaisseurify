@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: "artists#index"
+  get 'home/index'
+
+  root to: "home#index"
 
   devise_for :users
   resources :artists
