@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: "artists#index"
 
   devise_for :users
+  resources :artists
+  resources :songs
 end
