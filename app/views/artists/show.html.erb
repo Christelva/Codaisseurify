@@ -68,7 +68,7 @@ body {
 </div>
 <div class="row-4">
 <p><%= link_to "Add a song", new_song_path%></p>
-<p><%= link_to "Edit Artist", edit_artist_path(@artist.id)%></p>
+
 <p><%= link_to "Delete Artist", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
 <p><%= link_to "Back", artists_path%></p>
 </div>
