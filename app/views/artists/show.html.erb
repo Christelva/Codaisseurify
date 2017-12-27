@@ -35,6 +35,21 @@ body {
     <h4><i><%= @artist.bio %></i></h4>
 
   </div>
-
+  <h3>List of Songs</h3>
+       <% if @artist.songs.any? %>
+         <ul>
+           <% @artist.songs.each do |song| %>
+             <li><%= song.title %>
+             <li><%= link_to "Remove song", song_path(song.id), method: :delete, data: { confirm: "By pressing Ok you will be deleting this song. Are you sure you would like to coninue?" } %></li></li>
+           <% end %>
+         </ul>
+       <% else %>
+         <p>This artist has no songs, click on the button below to add a new song.</p>
+       <% end %>
+     </div>
 </div>
 </div>
+<p><%= link_to "+ ADD NEW SONG", new_song_path, class: "btn btn-info" %>
+<%= link_to "EDIT ARTIST", edit_artist_path(@artist.id), class: "btn btn-warning"%>
+<%= link_to "DELETE ARTIST", artist_path(@artist.id), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" } %></p>
+<%= link_to "BACK", artists_path, class: "btn btn-default"%></p>
