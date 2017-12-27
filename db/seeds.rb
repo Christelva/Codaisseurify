@@ -108,8 +108,8 @@ song_13 = Song.create!(
   title: "The worst", album:"Sail out", year: 2013, artist: jhene_aiko
 )
 
-photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304628/dvsn-1475177486-640x505_vvwjtb.jpg", artist: dvsn)
-photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304689/k.main__ntflmv.jpg", artist: kehlani)
-photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304734/mila-j-cover-story_imgwlb.jpg", artist: mila_j)
-photo4 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304787/1ea0d9e3d1bc6fe0c42d9052448f4039_kalm14.jpg", artist: tinashe)
-photo5 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304830/Jhene_Aiko-37-728x1091_h6tasb.jpg", artist: jhene_aiko)
+photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514382104/photo-credit-lesean-harris-extralarge_1499973687544_202_cbj2ul.jpg", artist: dvsn)
+photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514382849/Kehlani_thumx1.jpg", artist: kehlani)
+photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514383066/Screen-Shot-2017-02-08-at-8.11.02-PM-300x300_sjr2op.png", artist: mila_j)
+photo4 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514382960/Tinashe_hprh06.jpg", artist: tinashe)
+photo5 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514383041/0fa25ecb_avbaeq.jpg", artist: jhene_aiko)
