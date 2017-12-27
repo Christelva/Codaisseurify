@@ -14,10 +14,10 @@ body {
 
 </div>
   <% @artists.each do |artist| %>
-    <div class="col-lg-6 col-sm-2">
+    <div class="col-lg-6 col-sm-6">
       <div class="thumbnail">
         <% artist.photos.each do |photo| %>
-          <%= image_tag photo.image.thumbnail %>
+          <%= image_tag photo.image %>
         <% end %>
         <div class="caption">
           <h4><%= link_to artist.name, artist %></h4>
