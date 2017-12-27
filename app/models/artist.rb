@@ -5,5 +5,5 @@ class Artist < ApplicationRecord
 
   validates :bio, length: { maximum: 600 }
 
-  has_many :photos
+  has_many :photos, dependent: :destroy
 end

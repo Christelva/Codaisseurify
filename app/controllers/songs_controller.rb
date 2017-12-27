@@ -14,7 +14,7 @@ class SongsController < ApplicationController
   def create
     @song = Song.new(song_params)
     if @song.save
-      redirect_to root_path, notice: "Song created"
+      redirect_to root_path, notice: "Song is successfully created"
     else
       render "new"
     end
@@ -22,7 +22,7 @@ class SongsController < ApplicationController
 
   def destroy
     @song.destroy
-    redirect_to root_path, notice: "Song removed"
+    redirect_to root_path, notice: "Song is successfully removed"
   end
 
   private

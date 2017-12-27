@@ -1,8 +1,10 @@
 #Song.destroy_all
 Artist.destroy_all
 User.destroy_all
+Photo.destroy_all
+Song.destroy_all
 
-user = User.create!(email: "christel@codaisseurify.com", password: "123456")
+christel = User.create!(email: "christel@codaisseurify.com", password: "123456")
 
 dvsn = Artist.create!(
   name: "dvsn",
@@ -105,3 +107,9 @@ song_12 = Song.create!(
 song_13 = Song.create!(
   title: "The worst", album:"Sail out", year: 2013, artist: jhene_aiko
 )
+
+photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304628/dvsn-1475177486-640x505_vvwjtb.jpg", artist: dvsn)
+photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304689/k.main__ntflmv.jpg", artist: kehlani)
+photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304734/mila-j-cover-story_imgwlb.jpg", artist: mila_j)
+photo4 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304787/1ea0d9e3d1bc6fe0c42d9052448f4039_kalm14.jpg", artist: tinashe)
+photo5 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514304830/Jhene_Aiko-37-728x1091_h6tasb.jpg", artist: jhene_aiko)

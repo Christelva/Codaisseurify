@@ -41,6 +41,8 @@ gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+gem 'factory_bot_rails'
+
 end
 
 group :test do
