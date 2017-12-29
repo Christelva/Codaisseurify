@@ -11,3 +11,19 @@
     <p><%= message %></p>
   <% end %>
 <% end %>
+
+
+
+    <label for="title">Song Title</label>
+  <p>  <%= f.text_field :title, placeholder: "Song Title", class: "form-control" %></p>
+
+
+    <label for="artist">Artist</label>
+    <%= f.label :artist_id %>
+    <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "CREATE", class: "btn btn-default" %>
+  </div>
+<% end %>
