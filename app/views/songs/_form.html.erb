@@ -1,0 +1,13 @@
+<%= form_for :song, url: songs_path do |f| %>
+
+<% if @song != nil %>
+  <% @song.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
+
+<% if @artist != nil %>
+  <% @artist.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
