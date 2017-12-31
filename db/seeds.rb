@@ -57,15 +57,15 @@ jhene_aiko = Artist.create!(
    )
 
 song_1 = Song.create!(
-  title: "Morning after", album:"Morning after", year: 2017, artist: dvsn
+  title: "Morning after", artist: dvsn
 )
 
 song_2 = Song.create!(
-  title: "Hallucinations", album:"SEPT 5TH", year: 2016, artist: dvsn
+  title: "Hallucinations", artist: dvsn
 )
 
 song_3 = Song.create!(
-  title: "Dont choose", album:"Morning after", year: 2017, artist: dvsn
+  title: "Dont choose", artist: dvsn
 )
 
 song_4 = Song.create!(
@@ -73,39 +73,39 @@ song_4 = Song.create!(
 )
 
 song_5 = Song.create!(
-  title: "You should be here", album:"You should be here", year: 2016, artist: kehlani
+  title: "You should be here", artist: kehlani
 )
 
 song_6 = Song.create!(
-  title: "My main", album:"Made in L.A. ", year: 2014, artist: mila_j
+  title: "My main",  artist: mila_j
 )
 
 song_7 = Song.create!(
-  title: "Kicking back", album:"The waiting game", year: 2016, artist: mila_j
+  title: "Kicking back", artist: mila_j
 )
 
 song_8 = Song.create!(
-  title: "pretend", album:"Aquarius", year: 2014, artist: tinashe
+  title: "pretend", artist: tinashe
 )
 
 song_9 = Song.create!(
-  title: "All hands on deck", album:"Aquarius", year: 2014, artist: tinashe
+  title: "All hands on deck", artist: tinashe
 )
 
 song_10 = Song.create!(
-  title: "2 On", album:"You should be here", year: 2014, artist: tinashe
+  title: "2 On",  artist: tinashe
 )
 
 song_11 = Song.create!(
-  title: "Remember", album:"Sailed out", year: 2014, artist: jhene_aiko
+  title: "Remember", artist: jhene_aiko
 )
 
 song_12 = Song.create!(
-  title: "Pretty bird", album:"Sailed out", year: 2014, artist: jhene_aiko
+  title: "Pretty bird",  artist: jhene_aiko
 )
 
 song_13 = Song.create!(
-  title: "The worst", album:"Sail out", year: 2013, artist: jhene_aiko
+  title: "The worst",  artist: jhene_aiko
 )
 
 photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/cva1994/image/upload/v1514382104/photo-credit-lesean-harris-extralarge_1499973687544_202_cbj2ul.jpg", artist: dvsn)
