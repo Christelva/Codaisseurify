@@ -22,7 +22,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.save
-        format.html{ redirect_to artists_path, notice: "Song created"}
+        format.html{ redirect_to @song.artist, notice: "Song created"}
         format.json { render :show, status: :created, location: @song}
       else
         format.html {redirect_to artists_path}
@@ -31,10 +31,14 @@ class SongsController < ApplicationController
     end
   end
 
+
   def destroy
-    @song.destroy
-    redirect_to root_path, notice: "Song removed"
-  end
+      @song.destroy
+      respond_to do |format|
+        format.html { redirect_to @song.artist, notice: "Song deleted." }
+        format.json { head :no_content }
+      end
+    end
 
   private
 

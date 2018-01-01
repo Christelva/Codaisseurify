@@ -6,6 +6,7 @@ def index
 end
 
 def show
+  @song = Song.new
   @photos = @artist.photos
 end
 
