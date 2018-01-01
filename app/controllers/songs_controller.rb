@@ -4,12 +4,14 @@ class SongsController < ApplicationController
 
 #GET /songs
 #GET /songs.json
+
   def index
     @songs = Song.all
-    @song = Song.new
   end
 
-  def show; end
+  def show
+      @song = Song.find(params[:id])
+  end
 
   def new
     @song = Song.new
