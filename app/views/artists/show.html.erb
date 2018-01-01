@@ -57,7 +57,7 @@ body {
 
            <% @artist.songs.each do |song| %>
              <p class="title"><%= song.title %> </p>
-             <p><%= link_to "Remove song", song_path(song.id), method: :delete, data: { confirm: "By pressing Ok you will be deleting this song. Are you sure you would like to coninue?" } %></p>
+             <p><%= link_to "Remove song", song_path(song.id), method: :delete, data: { confirm: "By pressing Ok you will be deleting this song. Are you sure you would like to continue?" } %></p>
            <% end %>
 
        <% else %>
